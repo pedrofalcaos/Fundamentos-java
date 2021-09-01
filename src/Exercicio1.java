@@ -7,5 +7,6 @@ public class Exercicio1 {
         String nome = leTeclado.nextLine();
         leTeclado.nextLine();
         System.out.println("Olá,"+nome );
+        System.out.println("Commit");
     }
 }
