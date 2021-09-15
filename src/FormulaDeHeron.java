@@ -2,17 +2,17 @@ import java.util.Scanner;
 
 public class FormulaDeHeron {
     public static void main(String[] args) {
+        triangulo t1 = new triangulo();
         Scanner teclado = new Scanner(System.in);
         System.out.println("Primeiro lado: ");
-        int a = teclado.nextInt();
+        t1.l1 = teclado.nextDouble();
         System.out.println("segundo lado: ");
-        int b = teclado.nextInt();
+        t1.l2 = teclado.nextDouble();
         System.out.println("Terceiro lado: ");
-        int c = teclado.nextInt();
+        t1.l3 = teclado.nextDouble();
 
-        int p = (a+b+c)/2;
-        int h = p*(p-a)*(p-b)*(p-c);
-        int k = (int) Math.sqrt(h);
+        System.out.println(t1.area());
+
 
 
 
